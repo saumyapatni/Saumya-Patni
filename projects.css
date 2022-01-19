@@ -1,0 +1,171 @@
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  /* border: 1px solid blue; */
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.projects {
+  padding: 2em;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 85%;
+}
+.projectsonproject h1::after {
+  position: absolute;
+  left: 500px;
+  top: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 7rem;
+  content: "PROJECTS";
+  color: rgb(255, 255, 255, 0.2);
+}
+@media (max-width: 1439px) {
+  .projectsonproject h1::after {
+    display: none;
+  }
+}
+.projects img {
+  box-shadow: 0.3em 0.3em grey;
+  width: 420px;
+  height: 335px;
+}
+.project1-image img {
+  height: 260px;
+}
+.project2-image img {
+  height: 290px;
+}
+.project6-image img,.project8-image img {
+  height: 280px;
+}
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6,
+.project7,
+.project8,
+.project9,
+.project10,
+.project11,
+.project12,
+.project13,
+.project14 {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  margin-bottom: 130px;
+  column-gap: 50px;
+}
+.project1-desc h3,
+.project2-desc h3,
+.project3-desc h3,
+.project4-desc h3,
+.project5-desc h3,
+.project6-desc h3,
+.project7-desc h3,
+.project8-desc h3,
+.project9-desc h3,
+.project10-desc h3,
+.project11-desc h3,
+.project12-desc h3,
+.project13-desc h3,
+.project14-desc h3 {
+  padding: 0;
+  margin: 0;
+}
+.projects img:hover {
+  position: relative;
+  animation: projects 0.5s linear 1;
+}
+@-webkit-keyframes projects {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -80px;
+  }
+}
+@keyframes projects {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -80px;
+  }
+}
+@media (max-width: 1024px) {
+  .projectsonproject h1::after {
+    display: none;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6,
+  .project7,
+  .project8,
+  .project9,
+  .project10,
+  .project11,
+  .project12,
+  .project13,
+  .project14{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 500px; */
+    margin-bottom: 50px;
+  }
+  .projects img {
+    margin-bottom: 30px;
+  }
+  .projects img {
+    width: 270px;
+    height: 155px;
+  }
+  .project1-desc p,
+  .project2-desc p,
+  .project3-desc p,
+  .project4-desc p,
+  .project5-desc p,
+  .project6-desc p,
+  .project7-desc p,
+  .project8-desc p,
+  .project9-desc p,
+  .project10-desc p,
+  .project11-desc p,
+  .project12-desc p,
+  .project13-desc p,
+  .project14-desc p {
+    font-size: 0.7rem;
+  }
+  .blank {
+    display: none;
+  }
+}
+.backtotop {
+  right:4em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2em;
+  background-color: grey;
+  width: 3em;
+  height: 2em;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .backtotop {
+    width: 2em;
+    right: 1.6em;
+  }
+}
